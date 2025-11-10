@@ -9,6 +9,8 @@
   --secondary-neutral-color: hsl(201, 11%, 66%);
   --bg-color-primary: rgba(159, 171, 178, 0.15);
   --bg-color-secondary: rgba(76, 84, 93, 0.15);
+  --btn-green-hover: #0c530c;
+  --btn-blue-hover: #0b7285;
 }
 
 * {
@@ -19,6 +21,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -26,6 +29,7 @@ body {
   font-weight: 400;
   line-height: 1;
   color: var(--primary-neutral-color);
+  overflow-x: hidden;
 }
 
 a {
@@ -39,18 +43,69 @@ ul {
 /*************************************/
 /* Typography General Elements */
 /*************************************/
-
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: var(--primary-neutral-color);
+  line-height: 1.05;
+}
 .heading-primary {
   font-size: 5.2rem;
-  line-height: 1.05;
   margin-bottom: 3.2rem;
   font-weight: 700;
-  color: var(--primary-neutral-color);
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
 }
 
 /*************************************/
 /* General Reusables components */
 /*************************************/
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  column-gap: 4.8rem;
+  row-gap: 9.6rem;
+}
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  justify-items: center;
+  gap: 3.2rem;
+}
+
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 3.2rem;
+}
+.grid-5-rows {
+  grid-template-rows: repeat(5, auto);
+  align-items: center;
+  justify-items: center;
+}
+
+.mr-bt {
+  margin-bottom: 2.4rem;
+}
 
 .btn,
 .btn:link,
@@ -70,8 +125,18 @@ ul {
   background-color: var(--primary-color-green);
 }
 
+.btn-green:hover,
+.btn-green:active {
+  background-color: var(--btn-green-hover);
+}
+
 .btn-blue:link,
 .btn-blue:visited {
   color: #fff;
   background-color: var(--secondary-color-blue);
+}
+
+.btn-blue:hover,
+.btn-blue:active {
+  background-color: var(--btn-blue-hover);
 }

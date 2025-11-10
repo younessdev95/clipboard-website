@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="icon" href="./images/favicon-32x32.png" />
+
+    <script
+      defer
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      defer
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,21 +31,246 @@
     <title>Clipboard | Website</title>
   </head>
   <body>
-    <section class="section-hero">
-      <div class="hero">
-        <img src="./images/logo.svg" alt="Clipboard App Logo" />
-        <div class="hero-text-box">
-          <h1 class="heading-primary">A history of everything you copy</h1>
-          <p class="hero-description">
-            Clipboard allows you to track and organize everything you copy.
-            Instantly access your clipboard on all your devices.
+    <header class="header">
+      <a href="#"
+        ><img
+          class="header-logo"
+          src="./images/logo.svg"
+          alt="Clipbord App Logo"
+      /></a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a class="main-nav-link" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#features">Features</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#customers">Trusted By</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#download">Download</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon
+        ><ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section id="home" class="section-hero">
+        <div class="hero">
+          <img src="./images/logo.svg" alt="Clipboard App Logo" />
+          <div class="hero-text-box">
+            <h1 class="heading-primary">A history of everything you copy</h1>
+            <p class="hero-description">
+              Clipboard allows you to track and organize everything you copy.
+              Instantly access your clipboard on all your devices.
+            </p>
+          </div>
+          <div class="btn-hero-container">
+            <a class="btn btn-green" href="#">Download for iOS</a>
+            <a class="btn btn-blue" href="#">Download for Mac</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section-features">
+        <div class="container">
+          <div class="grid grid-5-rows">
+            <div>
+              <h2 class="heading-secondary">Keep track of your snippets</h2>
+              <p class="features-description">
+                Clipboard instantly stores any item gou copy in the cloud.
+                meaning gou can access your snippets immediately on all your
+                devices. Our Mac and iOS apps will help gou organize everuthing.
+              </p>
+            </div>
+            <div class="grid grid-2-cols">
+              <img
+                class="feature-img"
+                src="./images/image-computer.png"
+                alt="Computer Image"
+              />
+              <div class="features-container-main">
+                <div>
+                  <h3 class="heading-tertiary">Quick Search</h3>
+                  <p class="features-description">
+                    Easily search gour snippets by content, category, web
+                    address, application, and more.
+                  </p>
+                </div>
+                <div>
+                  <h3 class="heading-tertiary">iCloud Sync</h3>
+                  <p class="features-description">
+                    Instantly saves and syncs snippets across all gour devices.
+                  </p>
+                </div>
+                <div>
+                  <h3 class="heading-tertiary">Complete History</h3>
+                  <p class="features-description">
+                    Retrieve any snippets from the first moment you started
+                    using the app.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="mr-bt">
+                <h2 class="heading-secondary">Access Clipboard anywhere</h2>
+                <p class="features-description">
+                  Whether you're on the go. or at your computer. you can access
+                  all gour Clipboard snippets in few simple clicks.
+                </p>
+              </div>
+              <img
+                class="feature-img"
+                src="./images/image-devices.png"
+                alt="Devices Image"
+              />
+            </div>
+            <div>
+              <div class="mr-bt">
+                <h2 class="heading-secondary">Supercharge your workflow</h2>
+                <p class="features-description">
+                  We've got the the tools to boost your productivity.
+                </p>
+              </div>
+
+              <div class="grid grid-3-cols">
+                <div class="features-container-sub">
+                  <div class="feature-icon-container">
+                    <img
+                      class="feature-icon"
+                      src="./images/icon-blacklist.svg"
+                      alt="Feature Icon"
+                    />
+                  </div>
+                  <h3 class="heading-tertiary">Create blacklists</h3>
+                  <p class="features-description">
+                    Ensure sensitive information never makes its way to your
+                    clipboard by excluding certain sources.
+                  </p>
+                </div>
+                <div class="features-container-sub">
+                  <div class="feature-icon-container">
+                    <img
+                      class="feature-icon"
+                      src="./images/icon-text.svg"
+                      alt="Feature Icon"
+                    />
+                  </div>
+                  <h3 class="heading-tertiary">Plain text snippets</h3>
+                  <p class="features-description">
+                    Remove unwanted formatting from copied text for a consistent
+                    look.
+                  </p>
+                </div>
+                <div class="features-container-sub">
+                  <div class="feature-icon-container">
+                    <img
+                      class="feature-icon"
+                      src="./images/icon-preview.svg"
+                      alt="Feature Icon"
+                    />
+                  </div>
+                  <h3 class="heading-tertiary">Sneak preview</h3>
+                  <p class="features-description">
+                    Quick preview of all snippets on gour Clipboard for easy
+                    access.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="customers" class="section-customers">
+        <div class="container">
+          <div class="customers-container">
+            <img
+              class="logo-customer"
+              src="./images/logo-google.png"
+              alt="Google Logo"
+            />
+            <img
+              class="logo-customer"
+              src="./images/logo-ibm.png"
+              alt="IBM Logo"
+            />
+            <img
+              class="logo-customer"
+              src="./images/logo-microsoft.png"
+              alt="Microsoft Logo"
+            />
+            <img
+              class="logo-customer"
+              src="./images/logo-hp.png"
+              alt="HP Logo"
+            />
+            <img
+              src="./images/logo-vector-graphics.png"
+              alt="Vector Graphics Logo"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="download" class="section-download">
+        <div class="container">
+          <h2 class="heading-secondary">Clipboard for iOS and Mac OS</h2>
+          <p class="download-description mr-bt">
+            Available for on the App Store.Download for Mac IOS, sync With
+            iCloud and you're readg to start adding to your clipboard.
           </p>
+
+          <div class="btn-download-container">
+            <a class="btn btn-green" href="#">Download for iOS</a>
+            <a class="btn btn-blue" href="#">Download for Mac</a>
+          </div>
         </div>
-        <div class="btn-hero-container">
-          <a class="btn btn-green" href="#">Download for iOS</a>
-          <a class="btn btn-blue" href="#">Download for Mac</a>
-        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid-footer">
+        <img class="logo-footer" src="./images/logo.svg" alt="Logo" />
+        <nav class="footer-nav">
+          <a class="footer-link" href="#">FAQs</a>
+          <a class="footer-link" href="#">Contact Us</a>
+        </nav>
+        <nav class="footer-nav">
+          <a class="footer-link" href="#">Privacy Policy</a>
+          <a class="footer-link" href="#">Press Kit</a>
+        </nav>
+        <nav class="footer-nav">
+          <a class="footer-link" href="#">Install Guide</a>
+        </nav>
+
+        <ul class="social-links-footer">
+          <li>
+            <a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
       </div>
-    </section>
+    </footer>
   </body>
 </html>

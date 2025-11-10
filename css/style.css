@@ -1,4 +1,64 @@
 /*************************************/
+/* Header */
+/*************************************/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-color-secondary);
+
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+
+.header-logo {
+  height: 3.2rem;
+}
+
+.main-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.8rem;
+
+  color: var(--primary-neutral-color);
+
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: var(--primary-color-green);
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: var(--primary-neutral-color);
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/*************************************/
 /* Section Hero */
 /*************************************/
 
@@ -45,4 +105,132 @@
   display: flex;
   align-self: center;
   gap: 2.4rem;
+}
+
+/*************************************/
+/* Section Features */
+/*************************************/
+
+.section-features {
+  padding: 9.6rem 0;
+}
+
+.features-description {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  font-weight: 500;
+  color: var(--primary-neutral-color);
+  text-align: center;
+}
+
+.features-container-main {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+.features-container-sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.feature-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.feature-img {
+  max-width: 100%;
+}
+
+/*************************************/
+/* Section Customers */
+/*************************************/
+
+.section-customers {
+  padding: 3.2rem 0;
+}
+
+.customers-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*************************************/
+/* Section Download */
+/*************************************/
+.section-download {
+  padding: 9.6rem 0;
+}
+.download-description {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  font-weight: 500;
+  text-align: center;
+}
+
+.btn-download-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+/*************************************/
+/* Footer */
+/*************************************/
+.footer {
+  padding: 9.6rem 0;
+  background-color: #f8f9fa;
+}
+
+.grid-footer {
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+  align-items: start;
+  justify-items: center;
+}
+
+.social-links-footer {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.logo-footer {
+  width: 6.4rem;
+  heigth: 6.4rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  font-size: 1.4rem;
+  color: #343a40;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: var(--primary-color-green);
+}
+
+.social-icon {
+  width: 3.2rem;
+  height: 3.2rem;
 }
