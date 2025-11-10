@@ -1,0 +1,77 @@
+/*************************************/
+/* General initialization */
+/*************************************/
+
+:root {
+  --primary-color-green: hsl(171, 66%, 44%);
+  --secondary-color-blue: hsl(233, 100%, 69%);
+  --primary-neutral-color: hsl(210, 10%, 33%);
+  --secondary-neutral-color: hsl(201, 11%, 66%);
+  --bg-color-primary: rgba(159, 171, 178, 0.15);
+  --bg-color-secondary: rgba(76, 84, 93, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--primary-neutral-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/*************************************/
+/* Typography General Elements */
+/*************************************/
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+  font-weight: 700;
+  color: var(--primary-neutral-color);
+}
+
+/*************************************/
+/* General Reusables components */
+/*************************************/
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.btn-green:link,
+.btn-green:visited {
+  color: #fff;
+  background-color: var(--primary-color-green);
+}
+
+.btn-blue:link,
+.btn-blue:visited {
+  color: #fff;
+  background-color: var(--secondary-color-blue);
+}
