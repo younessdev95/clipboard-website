@@ -128,6 +128,7 @@ ul {
 .btn-green:hover,
 .btn-green:active {
   background-color: var(--btn-green-hover);
+  box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, 0.3);
 }
 
 .btn-blue:link,
@@ -139,4 +140,5 @@ ul {
 .btn-blue:hover,
 .btn-blue:active {
   background-color: var(--btn-blue-hover);
+  box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, 0.3);
 }
